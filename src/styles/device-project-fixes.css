@@ -1,0 +1,208 @@
+/* Tata letak tablet: gunakan drawer seperti perangkat mobile. */
+@media (min-width: 701px) and (max-width: 1024px) {
+  .portfolio-shell .workspace-sidebar {
+    position: fixed !important;
+    inset: 0 auto 0 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    width: min(320px, 84vw) !important;
+    height: 100dvh !important;
+    min-height: 0 !important;
+    padding: max(22px, env(safe-area-inset-top)) 16px
+      max(16px, env(safe-area-inset-bottom)) !important;
+    gap: 0 !important;
+    overflow: hidden !important;
+    background: var(--panel) !important;
+    border-right: 1px solid var(--line) !important;
+    border-bottom: 0 !important;
+    transform: translate3d(-105%, 0, 0) !important;
+    z-index: 1002 !important;
+    box-shadow: 22px 0 65px rgba(0, 0, 0, 0.38) !important;
+  }
+
+  .portfolio-shell .workspace-sidebar.is-open {
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  .portfolio-shell .brand-lockup {
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding: 0 8px 26px !important;
+  }
+
+  .portfolio-shell .sidebar-new-chat {
+    display: flex !important;
+  }
+
+  .portfolio-shell .sidebar-nav {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    min-height: 0 !important;
+    margin-top: 22px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    gap: 4px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .portfolio-shell .sidebar-label {
+    display: block !important;
+  }
+
+  .portfolio-shell .sidebar-nav-item {
+    display: flex !important;
+    flex: 0 0 42px !important;
+    width: 100% !important;
+    height: 42px !important;
+    font-size: 12px !important;
+    padding: 0 12px !important;
+  }
+
+  .portfolio-shell .sidebar-bottom {
+    display: block !important;
+    flex: 0 0 auto !important;
+    margin-top: auto !important;
+  }
+
+  .portfolio-shell .sidebar-person > span {
+    display: block !important;
+  }
+
+  .portfolio-shell .sidebar-backdrop {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 1001 !important;
+    border: 0 !important;
+    background: rgba(3, 5, 10, 0.68) !important;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+
+  .portfolio-shell .workspace-main {
+    width: 100% !important;
+    margin-left: 0 !important;
+    min-width: 0;
+  }
+
+  .portfolio-shell .mobile-menu-button {
+    display: inline-grid !important;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+  }
+
+  .portfolio-shell .topbar-breadcrumb {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+/* Warna project mengikuti tema portfolio, bukan warna template lama. */
+.portfolio-shell.theme-dark .portfolio-stage {
+  background: linear-gradient(
+    145deg,
+    #151b27 0%,
+    #10151f 58%,
+    #121b24 100%
+  ) !important;
+  border: 1px solid rgba(167, 139, 250, 0.22) !important;
+  box-shadow:
+    0 24px 65px rgba(0, 0, 0, 0.28),
+    inset 0 1px rgba(255, 255, 255, 0.035) !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-card {
+  background: transparent !important;
+  color: #f2f5fa !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-card__body h3 {
+  color: #f2f5fa !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-card__body p {
+  color: #aeb8c8 !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-impact {
+  color: #c1cad8 !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-card__visual {
+  background: linear-gradient(145deg, #20283a, #171d2b) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-visual-badges span,
+.portfolio-shell.theme-dark .portfolio-stack span,
+.portfolio-shell.theme-dark .portfolio-mini-card {
+  color: #e6eaf2 !important;
+  background: rgba(35, 43, 59, 0.94) !important;
+  border: 1px solid rgba(255, 255, 255, 0.11) !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-mini-card span {
+  color: #aeb8c8 !important;
+}
+
+.portfolio-shell.theme-dark .portfolio-mini-card.is-active {
+  border-color: rgba(167, 139, 250, 0.65) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(122, 92, 255, 0.2),
+    rgba(91, 210, 190, 0.08)
+  ) !important;
+}
+
+.portfolio-shell.theme-light .portfolio-stage {
+  background: linear-gradient(145deg, #ffffff, #f2f5fb) !important;
+  border: 1px solid rgba(67, 83, 115, 0.15) !important;
+  box-shadow: 0 22px 55px rgba(23, 38, 62, 0.09) !important;
+}
+
+.portfolio-shell.theme-light .portfolio-card__body h3 {
+  color: #20283a !important;
+}
+
+.portfolio-shell.theme-light .portfolio-card__body p,
+.portfolio-shell.theme-light .portfolio-impact {
+  color: #647188 !important;
+}
+
+.portfolio-shell.theme-light .portfolio-card__visual {
+  background: linear-gradient(145deg, #edf0fb, #e6f5f1) !important;
+  border: 1px solid rgba(67, 83, 115, 0.12) !important;
+}
+
+.portfolio-shell.theme-light .portfolio-visual-badges span,
+.portfolio-shell.theme-light .portfolio-stack span,
+.portfolio-shell.theme-light .portfolio-mini-card {
+  color: #30394d !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid rgba(67, 83, 115, 0.14) !important;
+}
+
+.portfolio-shell.theme-light .portfolio-mini-card span {
+  color: #748097 !important;
+}
+
+.portfolio-shell.theme-light .portfolio-mini-card.is-active {
+  border-color: rgba(112, 84, 220, 0.5) !important;
+  background: linear-gradient(135deg, #f0edff, #eaf8f4) !important;
+}
+
+@media (max-width: 700px) {
+  .portfolio-shell.theme-dark .portfolio-card,
+  .portfolio-shell.theme-light .portfolio-card {
+    border-radius: 22px !important;
+  }
+}

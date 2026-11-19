@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "default_section": "about",
+  "categories": {
+    "profile": {
+      "label": "Profile",
+      "description": "Identitas profesional dan ringkasan tentang Hari",
+      "aliases": [
+        "profile",
+        "about",
+        "tentang",
+        "profil",
+        "asal",
+        "latar belakang"
+      ],
+      "keywords": [
+        "profile",
+        "about hari",
+        "asal mana",
+        "berasal dari",
+        "latar belakang",
+        "siapa hari"
+      ],
+      "section": "about"
+    },
+    "experience": {
+      "label": "Work Experience",
+      "description": "Riwayat pekerjaan, perusahaan, jabatan, dan kontribusi",
+      "aliases": [
+        "experience",
+        "employment",
+        "pengalaman",
+        "pekerjaan",
+        "karier kerja"
+      ],
+      "keywords": [
+        "pengalaman kerja",
+        "riwayat kerja",
+        "perusahaan",
+        "pernah bekerja",
+        "tempat kerja",
+        "work history",
+        "employment history",
+        "kontribusi"
+      ],
+      "section": "experience"
+    },
+    "skills": {
+      "label": "Skills",
+      "description": "Keahlian teknis, teknologi, tools, dan kompetensi",
+      "aliases": [
+        "skills",
+        "skill",
+        "technical skills",
+        "keahlian",
+        "keterampilan",
+        "tech stack"
+      ],
+      "keywords": [
+        "skill",
+        "keahlian",
+        "keterampilan",
+        "teknologi",
+        "tech stack",
+        "frontend",
+        "backend",
+        "database",
+        "framework"
+      ],
+      "section": "skills"
+    },
+    "projects": {
+      "label": "Projects",
+      "description": "Project, produk, aplikasi, dan implementasi teknis",
+      "aliases": [
+        "projects",
+        "project",
+        "proyek",
+        "portfolio project"
+      ],
+      "keywords": [
+        "project",
+        "proyek",
+        "aplikasi yang dibuat",
+        "hasil pekerjaan",
+        "implementasi"
+      ],
+      "section": "projects"
+    },
+    "education": {
+      "label": "Education",
+      "description": "Riwayat pendidikan formal",
+      "aliases": [
+        "education",
+        "pendidikan",
+        "kuliah",
+        "universitas",
+        "kampus"
+      ],
+      "keywords": [
+        "pendidikan",
+        "riwayat pendidikan",
+        "kuliah",
+        "universitas",
+        "kampus",
+        "gelar",
+        "sekolah"
+      ],
+      "section": "education"
+    },
+    "certifications": {
+      "label": "Certifications & Courses",
+      "description": "Sertifikasi, kursus, pelatihan, dan pembelajaran",
+      "aliases": [
+        "certification",
+        "certifications",
+        "certificate",
+        "sertifikat",
+        "sertifikasi",
+        "course",
+        "kursus",
+        "pelatihan"
+      ],
+      "keywords": [
+        "sertifikasi",
+        "sertifikat",
+        "certification",
+        "course",
+        "kursus",
+        "pelatihan",
+        "training"
+      ],
+      "section": "education"
+    },
+    "career": {
+      "label": "Career Availability",
+      "description": "Status peluang kerja, ketersediaan bergabung, dan preferensi pengaturan kerja",
+      "aliases": [
+        "career",
+        "availability",
+        "job availability",
+        "lowongan",
+        "peluang kerja",
+        "kesiapan kerja",
+        "kapan bisa gabung",
+        "kapan bisa bergabung",
+        "sedang buka untuk lowongan",
+        "bisa gabung",
+        "bisa join",
+        "open untuk peluang"
+      ],
+      "keywords": [
+        "kapan bisa bergabung",
+        "kapan bisa gabung",
+        "bisa join",
+        "siap bergabung",
+        "open untuk lowongan",
+        "terbuka untuk peluang",
+        "sedang buka untuk lowongan",
+        "mencari pekerjaan",
+        "notice period",
+        "preferensi kerja",
+        "wfo",
+        "wfh",
+        "remote",
+        "hybrid"
+      ],
+      "section": "contact"
+    },
+    "personal": {
+      "label": "Personal Background",
+      "description": "Identitas pribadi yang dibagikan Hari, asal, domisili, umur, bahasa, hobi, dan karakter",
+      "aliases": [
+        "personal",
+        "about me personal",
+        "identitas",
+        "biodata",
+        "asal kota",
+        "domisili",
+        "umur",
+        "usia",
+        "hobi",
+        "hobby",
+        "bahasa",
+        "kepribadian"
+      ],
+      "keywords": [
+        "Hari Kurniawan",
+        "Tasikmalaya",
+        "Mampang Prapatan",
+        "Jakarta",
+        "6 Oktober 1997",
+        "Dota 2",
+        "Valorant",
+        "PUBG",
+        "bahasa Indonesia",
+        "bahasa Inggris",
+        "bahasa Malaysia"
+      ],
+      "section": "about"
+    },
+    "software_engineer_interview": {
+      "label": "Software Engineer Interview",
+      "description": "Persiapan interview teknis software engineer: frontend, backend, API, testing, debugging, dan engineering practices",
+      "aliases": [
+        "software engineer interview",
+        "frontend interview",
+        "backend interview",
+        "technical interview",
+        "interview engineer",
+        "interview software engineer",
+        "coding interview",
+        "interview software engineer",
+        "software engineer technical interview",
+        "pertanyaan engineer",
+        "pertanyaan software engineer",
+        "interview dengan engineer"
+      ],
+      "keywords": [
+        "React",
+        "React Native",
+        "Next.js",
+        "Angular",
+        "Vue.js",
+        "TypeScript",
+        "JavaScript",
+        "REST API",
+        "state management",
+        "testing",
+        "debugging",
+        "performance",
+        "scalability",
+        "code review"
+      ],
+      "section": "projects"
+    },
+    "tech_lead_interview": {
+      "label": "Tech Lead Interview",
+      "description": "Persiapan interview tech lead: arsitektur, keputusan teknis, leadership, code review, mentoring, kolaborasi, dan delivery",
+      "aliases": [
+        "tech lead interview",
+        "technical lead interview",
+        "engineering lead interview",
+        "leadership interview",
+        "system design interview",
+        "interview tech lead",
+        "tech lead technical interview",
+        "pertanyaan dari tech lead",
+        "pertanyaan tech lead",
+        "interview dengan tech lead"
+      ],
+      "keywords": [
+        "Micro-Frontend Architecture",
+        "Reusable Components",
+        "Nx",
+        "Redux",
+        "CI/CD",
+        "Jenkins",
+        "Agile",
+        "Scrum",
+        "mentoring",
+        "technical guidance",
+        "code review",
+        "architecture"
+      ],
+      "section": "experience"
+    },
+    "ai_engineering_interview": {
+      "label": "AI Engineering Interview",
+      "description": "Persiapan interview AI engineer berdasarkan project AI Portfolio Assistant dan teknologi yang benar-benar digunakan",
+      "aliases": [
+        "ai engineer interview",
+        "ai engineering interview",
+        "llm interview",
+        "rag interview",
+        "machine learning interview",
+        "generative ai interview",
+        "interview ai engineer",
+        "interview ai engineering",
+        "pertanyaan ai engineer",
+        "interview dengan ai engineer"
+      ],
+      "keywords": [
+        "LLM",
+        "RAG",
+        "Groq",
+        "FastAPI",
+        "FAISS",
+        "Sentence Transformers",
+        "embeddings",
+        "hybrid search",
+        "PyMuPDF",
+        "vector search"
+      ],
+      "section": "projects"
+    }
+  },
+  "intent_detection": {
+    "broad_markers": [
+      "apa saja",
+      "apa aja",
+      "semua",
+      "seluruh",
+      "daftar",
+      "sebutkan",
+      "lengkap",
+      "setiap",
+      "masing-masing",
+      "masing masing",
+      "all",
+      "every",
+      "list",
+      "kapan bisa gabung",
+      "kapan bisa bergabung",
+      "sedang buka untuk lowongan",
+      "open untuk peluang",
+      "bisa join",
+      "ceritakan tentang diri",
+      "perkenalkan diri",
+      "apa hobi",
+      "bahasa apa",
+      "bagaimana pendekatan",
+      "bagaimana cara",
+      "jelaskan arsitektur",
+      "technical interview",
+      "tech lead",
+      "software engineer",
+      "ai engineer"
+    ],
+    "broad_verbs": [
+      "jelaskan",
+      "ceritakan",
+      "tampilkan",
+      "sebutkan",
+      "daftar"
+    ]
+  },
+  "answer_policy": {
+    "language": "Follow the visitor's language.",
+    "grounding": "Only state facts supported by retrieved JSON or PDF context. If information is missing, explicitly say it is not available in the portfolio. Never guess or invent personal, career, salary, location, notice-period, or employment details.",
+    "pdf_json": "Use relevant JSON facts and PDF passages together. If sources conflict, identify the discrepancy and do not silently merge conflicting facts."
+  }
+}

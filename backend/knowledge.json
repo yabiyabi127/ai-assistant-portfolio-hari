@@ -1,0 +1,170 @@
+[
+  {
+    "id": "about",
+    "title": "About Hari",
+    "content": "Hari Kurniawan is a Software Engineer specializing in frontend and full-stack development, with 5+ years of experience building web and mobile applications. He has worked on internal platforms and business applications, developing reusable interfaces, integrating REST APIs, building micro-frontend modules, and supporting production applications. He has taken on frontend leadership responsibilities including technical guidance, mentoring, and code reviews. He is also developing applied AI engineering skills through an independent AI Portfolio Assistant project using Python, FastAPI, Groq-hosted LLMs, RAG, embeddings, FAISS, hybrid search, and multi-document retrieval. He holds a Bachelor degree in Informatics Engineering from Universitas Komputer Indonesia (UNIKOM), 2017–2021.",
+    "url": "/#about",
+    "category": "profile"
+  },
+  {
+    "id": "frontend",
+    "title": "Technical skills — Frontend and architecture",
+    "content": "Frontend: React.js, React Native, Next.js, Angular, Vue.js, Nuxt.js, Flutter, TypeScript, JavaScript (ES6+), HTML5, CSS3, Sass, Tailwind CSS, Bootstrap, Ant Design, Material UI. Architecture & State Management: Micro-Frontend Architecture, Reusable Components, Nx, Redux, Redux Toolkit (RTK), Zustand, React Query, SSR, CSR, ISR.",
+    "url": "/#skills",
+    "category": "skills"
+  },
+  {
+    "id": "backend",
+    "title": "Technical skills — Backend, databases, testing and collaboration",
+    "content": "Backend & APIs: ASP.NET Core, .NET, Node.js, Express.js, PHP, Laravel, CodeIgniter, REST API Design and Integration. Databases: MySQL, PostgreSQL, SQL Server, MongoDB. Testing & Delivery: Jest, React Testing Library, Cypress, Git, Jenkins, CI/CD, npm, Verdaccio, Agile/Scrum, Code Review, Production Debugging. Design & Collaboration: Figma, Jira, UI/UX Implementation, Technical Guidance, Mentoring. AI engineering skills practiced in an independent portfolio project: Python, FastAPI, Groq API, LLM integration, RAG, embeddings, Sentence Transformers, FAISS, Hybrid Search, PyMuPDF.",
+    "url": "/#skills",
+    "category": "skills"
+  },
+  {
+    "id": "prudential-role",
+    "title": "Prudential role",
+    "content": "Senior Frontend Engineer at PT Prudential Life Assurance, August 2025 to Present, Jakarta, Indonesia. Develop and maintain the PRUforce mobile application using React Native, focusing on performance, application stability, and cross-platform compatibility. Build and enhance internal web applications using Angular and Ionic, translating UI/UX designs into reusable responsive components. Integrate REST APIs and collaborate with backend engineers on data flow and business logic. Optimize and refactor code, troubleshoot production issues, and participate in Agile sprints, code reviews, debugging, and production releases.",
+    "url": "/#experience",
+    "category": "experience"
+  },
+  {
+    "id": "bluebird",
+    "title": "Blue Bird Group role",
+    "content": "Full-Stack Engineer at Blue Bird Group, September 2023 to August 2025. Developed responsive internal web applications using React, Vite, TypeScript, HTML, and CSS. Designed and maintained reusable frontend components, modules, libraries, and micro-frontend architecture. Built APIs using .NET and integrated backend services with frontend applications. Used npm registry-based module distribution and collaborated on business logic, code reviews, debugging, Agile planning, and delivery.",
+    "url": "/#experience",
+    "category": "experience"
+  },
+  {
+    "id": "mandiri-role",
+    "title": "Bank Mandiri role",
+    "content": "Senior Frontend Engineer at PT Bank Mandiri (Persero) Tbk, January 2022 to August 2024, Contract. Developed and maintained internal web applications using Angular, TypeScript, HTML, and Sass. Built reusable UI components, modules, and frontend libraries. Integrated frontend applications with backend APIs and collaborated with backend developers. Worked on performance, responsiveness, accessibility, debugging, and continuous improvement.",
+    "url": "/#experience",
+    "category": "experience"
+  },
+  {
+    "id": "beacukai-role",
+    "title": "Directorate General of Customs and Excise role",
+    "content": "Full-Stack Developer at Directorate General of Customs and Excise (DJBC), February 2020 to January 2021. Developed and maintained internal applications using React.js, React Native, and Vue.js with Ant Design. Worked with .NET Core and SQL Server for backend services and data integration. Built mobile application features, integrated REST APIs, implemented features and bug fixes tracked in Jira, and collaborated with multidisciplinary engineering teams.",
+    "url": "/#experience",
+    "category": "experience"
+  },
+  {
+    "id": "bigbird",
+    "title": "Bigbird Platform project",
+    "content": "Bigbird Platform — School bus system. Featured in the website portfolio as a project with a Figma prototype.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "mandiri-project",
+    "title": "Bank Mandiri project",
+    "content": "Peminjaman Modal Bank Mandiri — Banking industry project featured in portfolio.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "ceisa",
+    "title": "CEISA 40 project",
+    "content": "CEISA 40 — Bea dan Cukai project featured in portfolio.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "ufm",
+    "title": "Unified Fleet Monitoring project",
+    "content": "Unified Fleet Monitoring — vehicle tracking design prototype featured in portfolio.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "operational",
+    "title": "Operational project",
+    "content": "Operational — employee management design prototype featured in portfolio.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "design-system",
+    "title": "UMMI design system",
+    "content": "Design system UMMI Sukabumi — created UI design framework to maintain visual consistency and provide design guidance.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "flaba",
+    "title": "Flaba store design",
+    "content": "UI/UX Web Design Flaba store — website UI/UX design with focus on user friendliness.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "kuliner",
+    "title": "Kuliner Tasikmalaya",
+    "content": "Kuliner Tasikmalaya — local culinary tourism website project.",
+    "url": "/#portfolio",
+    "category": "projects"
+  },
+  {
+    "id": "ai-portfolio-assistant-project",
+    "title": "AI Portfolio Assistant — Personal AI Engineering Project",
+    "content": "Independent hands-on AI engineering project, ongoing in 2026. Hari built an interactive portfolio assistant with a React frontend and Python FastAPI backend, connected to Groq-hosted LLMs. The retrieval pipeline uses Retrieval-Augmented Generation (RAG), Sentence Transformers multilingual embeddings, FAISS vector indexing, hybrid keyword and semantic search, and document ingestion for structured JSON knowledge and multiple PDF documents. PDF processing uses PyMuPDF for text extraction, chunking, source metadata and page references. The assistant retrieves relevant passages and supplies context to the LLM to generate answers grounded in portfolio information. This is a personal learning and portfolio project, not a paid AI Engineer job at an employer. The portfolio interface also presents an interactive project showcase and a GitHub repository carousel that loads public repositories from Hari’s GitHub account. The site supports dark and light themes, responsive navigation for desktop, tablet, and mobile, and a fixed top navigation bar that remains visible while scrolling.",
+    "url": "/#ai-engineering",
+    "category": "projects"
+  },
+  {
+    "id": "portfolio-ui-navigation-and-repositories",
+    "title": "Portfolio website — UI, navigation and GitHub repositories",
+    "content": "The Hari personal portfolio website is built with React and Vite. It includes an Ask Hari AI interface, profile and experience sections, AI Engineering, technical skills, selected projects, and contact information. The Projects area includes a GitHub repository carousel that fetches public repositories from the GitHub API account yabiyabi127 and displays repository names, descriptions, stars, forks, and links. The interface supports dark and light themes, responsive navigation across desktop, tablet, and mobile layouts, and a fixed top navigation bar that stays visible while scrolling. Repository cards use the same theme-aware visual system as the project showcase.",
+    "url": "/#projects",
+    "category": "projects"
+  },
+  {
+    "id": "education-unikom",
+    "title": "Education — Universitas Komputer Indonesia",
+    "content": "Bachelor degree in Informatics Engineering from Universitas Komputer Indonesia (UNIKOM), 2017–2021.",
+    "url": "/#education",
+    "category": "education"
+  },
+  {
+    "id": "career-availability",
+    "title": "Career Availability and Work Preferences",
+    "content": "Hari is open to new job opportunities. He is available to join immediately. His work arrangement preference is flexible and he is open to discussing different work arrangements. These details were provided by Hari for recruiter inquiries.",
+    "url": "/#contact",
+    "category": "career"
+  },
+  {
+    "id": "personal-background",
+    "title": "Personal Background — Hari Kurniawan",
+    "content": "Nama lengkap Hari Kurniawan. Hari berasal dari Tasikmalaya dan saat ini berdomisili di Mampang Prapatan, Jakarta. Tanggal lahir 6 Oktober 1997 (umur 29 tahun per November 2026). Bahasa yang digunakan: Indonesia, Inggris, dan Malaysia. Hobi Hari adalah bermain game PC competitive, terutama Dota 2, Valorant, dan PUBG di Steam. Hari menggambarkan dirinya sebagai pribadi analitis, adaptif, bertanggung jawab, memiliki rasa ingin tahu tinggi, senang mempelajari hal baru, terbuka terhadap masukan, mampu bekerja mandiri maupun kolaboratif, memperhatikan detail, berpikir sistematis, berorientasi pada hasil, dan berkomitmen pada pengembangan diri.",
+    "url": "/#about",
+    "category": "personal"
+  },
+  {
+    "id": "career-motivation",
+    "title": "Career Motivation and Goals",
+    "content": "Hari termotivasi untuk terus mengembangkan kemampuan dan memperluas pengalaman profesional, khususnya di bidang teknologi dan software engineering. Hari ingin terlibat dalam proyek menantang, memberi kontribusi nyata melalui solusi teknologi yang efektif, serta meningkatkan kemampuan membangun aplikasi berkualitas, scalable, dan mudah dipelihara. Dalam jangka panjang, Hari menargetkan berkembang menjadi software engineer yang kompeten, mampu menghadapi tantangan teknologi kompleks, dan memberi dampak positif bagi perusahaan maupun tim.",
+    "url": "/#about",
+    "category": "personal"
+  },
+  {
+    "id": "interview-software-engineer",
+    "title": "Software Engineer Interview — Experience-Based Topics",
+    "content": "Untuk interview Software Engineer, jawaban Hari harus dipusatkan pada pengalaman dan skill yang tercatat: React.js, React Native, Next.js, Angular, Vue.js, Nuxt.js, TypeScript, JavaScript, REST API integration, state management (Redux, Redux Toolkit, Zustand, React Query), reusable components, Micro-Frontend Architecture, testing (Jest, React Testing Library, Cypress), Git, Jenkins, CI/CD, debugging, dan database MySQL, PostgreSQL, SQL Server, MongoDB. Hari dapat menjelaskan konsep teknis secara umum, tetapi klaim implementasi spesifik, skala trafik, angka performa, atau hasil bisnis hanya boleh disebut jika ada bukti di knowledge base atau dokumen. Untuk pertanyaan yang belum didukung pengalaman, bedakan penjelasan konsep dari pengalaman langsung dan jangan mengarang.",
+    "url": "/#skills",
+    "category": "software_engineer_interview"
+  },
+  {
+    "id": "interview-tech-lead",
+    "title": "Tech Lead Interview — Architecture and Collaboration",
+    "content": "Topik Tech Lead yang didukung profil Hari meliputi Micro-Frontend Architecture, reusable components, Nx, Redux/Redux Toolkit/Zustand/React Query, SSR/CSR/ISR, REST API integration, code review, technical guidance, mentoring, Agile/Scrum, Jenkins dan CI/CD. Dalam menjawab pertanyaan desain sistem, Hari perlu menjelaskan kebutuhan, trade-off, maintainability, scalability, testing, observability, dan kolaborasi sebagai kerangka berpikir umum. Jangan mengklaim pernah memimpin organisasi besar, mengelola jumlah anggota tim tertentu, atau mengambil keputusan arsitektur tertentu kecuali tercatat di sumber. Jawaban pengalaman harus menggunakan contoh nyata yang tersedia.",
+    "url": "/#experience",
+    "category": "tech_lead_interview"
+  },
+  {
+    "id": "interview-ai-engineering",
+    "title": "AI Engineering Interview — AI Portfolio Assistant",
+    "content": "Project AI Engineering Hari adalah AI Portfolio Assistant dengan frontend React, backend FastAPI, Groq-compatible LLM, RAG, embeddings menggunakan Sentence Transformers, vector search FAISS, hybrid retrieval, knowledge berbasis JSON, multi-document retrieval termasuk PDF, dan pemrosesan PDF menggunakan PyMuPDF. Alur konseptual: pertanyaan pengguna diterima API, sistem mengambil konteks relevan dari knowledge JSON dan dokumen, konteks dikirim bersama instruksi grounding ke LLM, lalu jawaban dan sumber dikembalikan ke frontend. Hari dapat menjelaskan peran tiap komponen dan alasan grounding untuk mengurangi hallucination. Jangan mengklaim model dilatih sendiri; project menggunakan model LLM melalui provider Groq.",
+    "url": "/#projects",
+    "category": "ai_engineering_interview"
+  }
+]

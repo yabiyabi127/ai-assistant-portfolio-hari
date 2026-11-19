@@ -1,0 +1,182 @@
+/*
+ * Mobile Ask Hari AI:
+ * - Pada chat kosong, halaman berakhir tepat setelah footer.
+ * - Tidak mewarisi min-height viewport dari wrapper dan chat-home.
+ * - Cegah elemen dekoratif menyebabkan horizontal scrolling.
+ */
+@media (max-width: 700px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto;
+    overflow-x: hidden !important;
+    background: var(--bg, #0b0d12);
+  }
+
+  .portfolio-shell {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    height: auto;
+    overflow-x: hidden !important;
+    overflow-y: visible;
+    padding-bottom: 0;
+  }
+
+  .workspace-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    overflow-x: clip;
+  }
+
+  /* Chat kosong: jangan gunakan tinggi minimum sebesar viewport. */
+  .portfolio-shell:has(.chat-home.is-empty) .workspace-main {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .workspace-content.is-chat-view {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: clip;
+  }
+
+  .workspace-content.is-chat-view:has(.chat-home.is-empty) {
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .workspace-content.is-chat-view .chat-home.is-empty {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0 !important;
+    height: auto !important;
+    flex: 0 0 auto !important;
+    justify-content: flex-start;
+    padding-bottom: 12px;
+  }
+
+  .chat-home.is-empty .chat-intro-shell,
+  .chat-home.is-empty .chat-welcome,
+  .chat-home.is-empty .chat-composer-wrap {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  /* Percakapan aktif tetap dapat memanjang dan memakai scroll internal. */
+  .workspace-content.is-chat-view .chat-home.has-messages {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0 !important;
+    height: auto;
+    flex: 1 0 auto;
+  }
+
+  .workspace-footer {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0 !important;
+    padding: 13px 15px max(13px, env(safe-area-inset-bottom));
+    overflow-wrap: anywhere;
+    background: var(--bg, #0b0d12);
+  }
+
+
+  /* Chat aktif: isi ruang layar sampai footer, meski percakapan masih pendek. */
+  .portfolio-shell:has(.chat-home.has-messages) {
+    display: flex;
+    min-height: 100dvh !important;
+    height: auto !important;
+    align-items: stretch;
+  }
+
+  .portfolio-shell:has(.chat-home.has-messages) .workspace-main {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 100dvh !important;
+    height: auto !important;
+  }
+
+  .workspace-content.is-chat-view:has(.chat-home.has-messages) {
+    display: flex;
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  .workspace-content.is-chat-view .chat-home.has-messages {
+    display: flex;
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding-bottom: 10px;
+  }
+
+  .chat-home.has-messages .chat-conversation {
+    flex: 1 1 0;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .chat-home.has-messages .chat-composer-wrap {
+    flex: 0 0 auto;
+    margin-top: 0;
+    padding-bottom: 8px;
+  }
+
+  .portfolio-shell:has(.chat-home.has-messages) .workspace-footer {
+    margin-top: auto !important;
+  }
+
+  /* Lapisan orbit/glow hanya dekoratif; jangan ikut memperlebar halaman. */
+  .global-motion-layer,
+  .workspace-noise {
+    max-width: 100%;
+    overflow: clip;
+    pointer-events: none;
+  }
+
+  .workspace-main::before,
+  .workspace-content::before,
+  .workspace-content::after {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .workspace-content.is-chat-view .chat-home.is-empty {
+    padding-bottom: 10px;
+  }
+
+  .workspace-footer {
+    gap: 8px;
+    font-size: 8px;
+  }
+}
