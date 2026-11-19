@@ -1,6 +1,6 @@
-# Hari Personal AI Portfolio — V10.13
+# Hari Personal AI Portfolio — V1.0
 
-Paket ini menggabungkan frontend V10.9.5 dengan backend FastAPI yang diperbarui untuk kualitas RAG, sumber navigasi, fallback, dan riwayat percakapan lokal.
+Paket ini menggabungkan frontend V1.0 dengan backend FastAPI yang diperbarui untuk kualitas RAG, sumber navigasi, fallback, dan riwayat percakapan lokal.
 
 ## Frontend
 ```powershell
