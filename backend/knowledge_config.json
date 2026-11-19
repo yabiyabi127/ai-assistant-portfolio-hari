@@ -31,7 +31,12 @@
         "employment",
         "pengalaman",
         "pekerjaan",
-        "karier kerja"
+        "karier kerja",
+        "karier",
+        "perjalanan karier",
+        "riwayat karier",
+        "career history",
+        "work history"
       ],
       "keywords": [
         "pengalaman kerja",
@@ -325,7 +330,11 @@
       "technical interview",
       "tech lead",
       "software engineer",
-      "ai engineer"
+      "ai engineer",
+      "perjalanan karier",
+      "riwayat karier",
+      "career journey",
+      "career history"
     ],
     "broad_verbs": [
       "jelaskan",

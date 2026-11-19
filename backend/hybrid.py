@@ -41,7 +41,7 @@ def lexical_rank(query, documents):
             results.append((score, doc))
     return [doc for _, doc in sorted(results, key=lambda x: -x[0])]
 
-def retrieve_hybrid(query, documents, limit=4, semantic_fn=semantic_search):
+def retrieve_hybrid(query, documents, limit=8, semantic_fn=semantic_search):
     """Combine lexical and semantic rankings using reciprocal-rank fusion.
 
     semantic_fn may return None if the index isn't ready. In that case the
