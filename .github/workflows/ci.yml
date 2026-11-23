@@ -1,0 +1,43 @@
+name: Hari AI Backend CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  backend-ci:
+    name: Backend Test and Docker Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Validate JSON
+        run: |
+          python -m json.tool backend/knowledge.json > /dev/null
+          python -m json.tool backend/knowledge_config.json > /dev/null
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -t hari-portfolio-api:ci \
+            ./backend
+
+      - name: Run unit tests
+        run: |
+          docker run --rm \
+            --entrypoint python \
+            hari-portfolio-api:ci \
+            -m unittest discover -s tests -v
+
+      - name: CI completed
+        run: echo "Hari AI CI completed successfully"
