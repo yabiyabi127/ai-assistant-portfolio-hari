@@ -1,19 +1,27 @@
 {
-  "sha256": "e7b3fa60b4864733f04acc16b605dc9ca0667edc3384a3a2d2f61063616382aa",
+  "sha256": "f6364804a22c57ca30aaac3eae381be635e4b71bcacd88daa395327b9ad3714b",
   "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "chunks": [
     {
       "id": "about",
       "title": "About Hari",
-      "content": "Hari Kurniawan is a Software Engineer specializing in frontend and full-stack development, with 5+ years of experience building web and mobile applications. He has worked on internal platforms and business applications, developing reusable interfaces, integrating REST APIs, building micro-frontend modules, and supporting production applications. He has taken on frontend leadership responsibilities including technical guidance, mentoring, and code reviews. He is also developing applied AI engineering skills through",
+      "content": "Hari Kurniawan is a Software Engineer specializing in frontend and full-stack development, with 5+ years of experience building web and mobile applications. This is the professional profile and short introduction for Hari Kurniawan. He has worked on internal platforms and business applications, developing reusable interfaces, integrating REST APIs, building micro-frontend modules, and supporting production applications. He has taken on frontend leadership responsibilities including technical guidance, mentoring,",
       "url": "/#about",
       "source_type": "json",
       "source_file": "knowledge.json"
     },
     {
-      "id": "about:part:439",
+      "id": "about:part:437",
       "title": "About Hari",
-      "content": "g, and code reviews. He is also developing applied AI engineering skills through an independent AI Portfolio Assistant project using Python, FastAPI, Groq-hosted LLMs, RAG, embeddings, FAISS, hybrid search, and multi-document retrieval. He holds a Bachelor degree in Informatics Engineering from Universitas Komputer Indonesia (UNIKOM), 2017–2021.",
+      "content": "on frontend leadership responsibilities including technical guidance, mentoring, and code reviews. He is also developing applied AI engineering skills through an independent AI Portfolio Assistant project using Python, FastAPI, Groq-hosted LLMs, RAG, embeddings, FAISS, hybrid search, and multi-document retrieval. He holds a Bachelor degree in Informatics Engineering from Universitas Komputer Indonesia (UNIKOM), 2017–2021. For personal origin, residence, date of birth, languages, hobbies, and personality, use the",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "about:part:874",
+      "title": "About Hari",
+      "content": "l origin, residence, date of birth, languages, hobbies, and personality, use the personal-background record.",
       "url": "/#about",
       "source_type": "json",
       "source_file": "knowledge.json"
@@ -76,8 +84,8 @@
     },
     {
       "id": "beacukai-role",
-      "title": "Directorate General of Customs and Excise role",
-      "content": "Full-Stack Developer at Directorate General of Customs and Excise (DJBC), February 2020 to January 2021. Developed and maintained internal applications using React.js, React Native, and Vue.js with Ant Design. Worked with .NET Core and SQL Server for backend services and data integration. Built mobile application features, integrated REST APIs, implemented features and bug fixes tracked in Jira, and collaborated with multidisciplinary engineering teams.",
+      "title": "Direktorat Jenderal Bea dan Cukai role",
+      "content": "Full-Stack Developer at Direktorat Jenderal Bea dan Cukai (DJBC), February 2020 to January 2021. Developed and maintained internal applications using React.js, React Native, and Vue.js with Ant Design. Worked with .NET Core and SQL Server for backend services and data integration. Built mobile application features, integrated REST APIs, implemented features and bug fixes tracked in Jira, and collaborated with multidisciplinary engineering teams.",
       "url": "/#experience",
       "source_type": "json",
       "source_file": "knowledge.json"
@@ -204,16 +212,24 @@
     },
     {
       "id": "personal-background",
-      "title": "Personal Background — Hari Kurniawan",
-      "content": "Nama lengkap Hari Kurniawan. Hari berasal dari Tasikmalaya dan saat ini berdomisili di Mampang Prapatan, Jakarta. Tanggal lahir 6 Oktober 1997 (umur 29 tahun per November 2026). Bahasa yang digunakan: Indonesia, Inggris, dan Malaysia. Hobi Hari adalah bermain game PC competitive, terutama Dota 2, Valorant, dan PUBG di Steam. Hari menggambarkan dirinya sebagai pribadi analitis, adaptif, bertanggung jawab, memiliki rasa ingin tahu tinggi, senang mempelajari hal baru, terbuka terhadap masukan, mampu bekerja mandiri",
+      "title": "Personal Background — Identity, Origin, Residence, Hobbies and Languages",
+      "content": "Nama lengkap Hari adalah Hari Kurniawan. Identitas pribadi, biodata, dan informasi umum Hari: Hari berasal dari Tasikmalaya, Jawa Barat, dan saat ini berdomisili di Mampang Prapatan, Jakarta, Indonesia. Tanggal lahir Hari adalah 6 Oktober 1997. Umur dapat dihitung berdasarkan tanggal lahir dan tanggal saat pertanyaan diajukan; jangan menggunakan angka umur yang sudah kedaluwarsa. Bahasa yang digunakan Hari adalah Bahasa Indonesia, Bahasa Inggris, dan Bahasa Malaysia. Hobi Hari adalah bermain game PC kompetitif,",
       "url": "/#about",
       "source_type": "json",
       "source_file": "knowledge.json"
     },
     {
-      "id": "personal-background:part:437",
-      "title": "Personal Background — Hari Kurniawan",
-      "content": "gi, senang mempelajari hal baru, terbuka terhadap masukan, mampu bekerja mandiri maupun kolaboratif, memperhatikan detail, berpikir sistematis, berorientasi pada hasil, dan berkomitmen pada pengembangan diri.",
+      "id": "personal-background:part:436",
+      "title": "Personal Background — Identity, Origin, Residence, Hobbies and Languages",
+      "content": "ahasa Inggris, dan Bahasa Malaysia. Hobi Hari adalah bermain game PC kompetitif, terutama Dota 2, Valorant, dan PUBG melalui Steam. Hari menggambarkan dirinya sebagai pribadi analitis, adaptif, bertanggung jawab, memiliki rasa ingin tahu tinggi, senang mempelajari hal baru, terbuka terhadap masukan, mampu bekerja mandiri maupun kolaboratif, memperhatikan detail, berpikir sistematis, berorientasi pada hasil, dan berkomitmen pada pengembangan diri. Informasi tempat tinggal yang tersedia hanya sampai tingkat kawasan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "personal-background:part:874",
+      "title": "Personal Background — Identity, Origin, Residence, Hobbies and Languages",
+      "content": "bangan diri. Informasi tempat tinggal yang tersedia hanya sampai tingkat kawasan Mampang Prapatan, Jakarta; alamat jalan atau nomor rumah tidak tersedia.",
       "url": "/#about",
       "source_type": "json",
       "source_file": "knowledge.json"
@@ -279,6 +295,374 @@
       "title": "AI Engineering Interview — AI Portfolio Assistant",
       "content": "dikirim bersama instruksi grounding ke LLM, lalu jawaban dan sumber dikembalikan ke frontend. Hari dapat menjelaskan peran tiap komponen dan alasan grounding untuk mengurangi hallucination. Jangan mengklaim model dilatih sendiri; project menggunakan model LLM melalui provider Groq.",
       "url": "/#projects",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "current-employment-summary",
+      "title": "Current Employment — Company, Position and Work Location",
+      "content": "Berdasarkan riwayat pekerjaan di portfolio, Hari saat ini bekerja sebagai Senior Frontend Engineer di PT Prudential Life Assurance sejak Agustus 2025 hingga sekarang. Lokasi pekerjaan yang tercantum adalah Jakarta, Indonesia. Untuk detail tanggung jawab dan teknologi yang digunakan, lihat catatan Prudential role.",
+      "url": "/#experience",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-tell-me-about-yourself",
+      "title": "HR Interview — Ceritakan tentang diri Anda / Tell me about yourself",
+      "content": "Pertanyaan HR: Ceritakan tentang diri Anda / Tell me about yourself. Contoh jawaban Hari: Saya Hari Kurniawan, seorang Software Engineer yang berfokus pada frontend dan full-stack development dengan pengalaman lebih dari lima tahun membangun aplikasi web dan mobile. Saya pernah mengembangkan aplikasi internal, reusable components, integrasi REST API, dan arsitektur micro-frontend. Saat ini saya bekerja sebagai Senior Frontend Engineer di PT Prudential Life Assurance. Di luar pekerjaan, saya juga mengembangkan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-tell-me-about-yourself:part:434",
+      "title": "HR Interview — Ceritakan tentang diri Anda / Tell me about yourself",
+      "content": "neer di PT Prudential Life Assurance. Di luar pekerjaan, saya juga mengembangkan kemampuan AI Engineering melalui project pribadi AI Portfolio Assistant menggunakan React, FastAPI, Groq, dan RAG. Saya senang mempelajari teknologi baru dan ingin terus memberikan kontribusi melalui solusi yang bermanfaat dan mudah dipelihara. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-tell-me-about-yourself:part:871",
+      "title": "HR Interview — Ceritakan tentang diri Anda / Tell me about yourself",
+      "content": "angan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-current-role",
+      "title": "HR Interview — Apa pekerjaan Anda saat ini?",
+      "content": "Pertanyaan HR: Apa pekerjaan Anda saat ini?. Contoh jawaban Hari: Saat ini saya bekerja sebagai Senior Frontend Engineer di PT Prudential Life Assurance sejak Agustus 2025. Fokus pekerjaan saya mencakup pengembangan aplikasi mobile PRUforce menggunakan React Native serta pengembangan aplikasi web internal menggunakan Angular dan Ionic. Saya juga menangani integrasi REST API, reusable components, optimasi, debugging, dan kolaborasi dengan tim backend. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-current-role:part:439",
+      "title": "HR Interview — Apa pekerjaan Anda saat ini?",
+      "content": "an tim backend. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-career-history",
+      "title": "HR Interview — Ceritakan perjalanan karier Anda",
+      "content": "Pertanyaan HR: Ceritakan perjalanan karier Anda. Contoh jawaban Hari: Pengalaman saya mencakup pengembangan aplikasi di Direktorat Jenderal Bea dan Cukai, Bank Mandiri, Blue Bird Group, dan saat ini PT Prudential Life Assurance. Area pekerjaan saya berfokus pada frontend dan full-stack development, termasuk React, React Native, Vue, Angular, TypeScript, integrasi API, dan pengembangan aplikasi internal. Detail periode dan tanggung jawab tiap posisi dapat dijelaskan berdasarkan riwayat pengalaman di portfolio.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-career-history:part:434",
+      "title": "HR Interview — Ceritakan perjalanan karier Anda",
+      "content": "jawab tiap posisi dapat dijelaskan berdasarkan riwayat pengalaman di portfolio. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-why-apply",
+      "title": "HR Interview — Mengapa Anda tertarik melamar posisi ini?",
+      "content": "Pertanyaan HR: Mengapa Anda tertarik melamar posisi ini?. Contoh jawaban Hari: Saya tertarik karena ingin mengembangkan pengalaman software engineering sekaligus memberikan kontribusi pada kebutuhan produk dan tim. Saya ingin memahami tantangan utama pada posisi ini, lalu menghubungkannya dengan pengalaman saya membangun aplikasi web dan mobile, reusable components, integrasi API, serta kolaborasi lintas tim. Jawaban akhir sebaiknya disesuaikan dengan perusahaan dan deskripsi posisi yang dilamar. Panduan:",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-why-apply:part:430",
+      "title": "HR Interview — Mengapa Anda tertarik melamar posisi ini?",
+      "content": "aiknya disesuaikan dengan perusahaan dan deskripsi posisi yang dilamar. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-why-hire",
+      "title": "HR Interview — Mengapa kami harus menerima Anda?",
+      "content": "Pertanyaan HR: Mengapa kami harus menerima Anda?. Contoh jawaban Hari: Saya memiliki pengalaman lebih dari lima tahun di frontend dan full-stack development, terbiasa bekerja dengan beberapa framework seperti React, React Native, Angular, dan Vue, serta memahami integrasi REST API dan pengembangan komponen reusable. Saya juga terbiasa berkolaborasi dengan backend engineer, melakukan debugging, code review, dan mendukung aplikasi production. Saya berharap pengalaman tersebut dapat membantu tim mengembangkan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-why-hire:part:431",
+      "title": "HR Interview — Mengapa kami harus menerima Anda?",
+      "content": "i production. Saya berharap pengalaman tersebut dapat membantu tim mengembangkan aplikasi yang stabil dan mudah dipelihara. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-strengths",
+      "title": "HR Interview — Apa kelebihan Anda?",
+      "content": "Pertanyaan HR: Apa kelebihan Anda?. Contoh jawaban Hari: Saya cukup analitis, adaptif, bertanggung jawab, dan memperhatikan detail. Dalam pekerjaan, saya berusaha memahami kebutuhan sebelum menentukan solusi, menjaga kualitas implementasi, serta terbuka terhadap masukan. Saya juga nyaman bekerja mandiri maupun berkolaborasi dengan tim. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-strengths:part:438",
+      "title": "HR Interview — Apa kelebihan Anda?",
+      "content": "dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-weaknesses",
+      "title": "HR Interview — Apa kekurangan atau area yang masih ingin Anda kembangkan?",
+      "content": "Pertanyaan HR: Apa kekurangan atau area yang masih ingin Anda kembangkan?. Contoh jawaban Hari: Saya masih terus mengembangkan kemampuan, terutama dalam memperluas pemahaman backend dan AI Engineering. Untuk itu saya belajar melalui project mandiri, termasuk membangun AI Portfolio Assistant dengan FastAPI, RAG, dan integrasi LLM. Saya berusaha menjaga agar proses belajar tersebut tetap seimbang dengan tanggung jawab pekerjaan. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-weaknesses:part:439",
+      "title": "HR Interview — Apa kekurangan atau area yang masih ingin Anda kembangkan?",
+      "content": "sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-achievement",
+      "title": "HR Interview — Apa pencapaian yang paling Anda banggakan?",
+      "content": "Pertanyaan HR: Apa pencapaian yang paling Anda banggakan?. Contoh jawaban Hari: Salah satu hal yang saya banggakan adalah pengalaman membangun dan mengembangkan aplikasi internal serta reusable components yang digunakan dalam pekerjaan tim. Saya juga mengembangkan project AI Portfolio Assistant secara mandiri sebagai sarana menerapkan pembelajaran AI Engineering. Untuk menyebut pencapaian bisnis atau angka dampak tertentu, saya perlu merujuk pada data yang memang tersedia. Panduan: sampaikan dengan bahasa natural,",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-achievement:part:439",
+      "title": "HR Interview — Apa pencapaian yang paling Anda banggakan?",
+      "content": "erujuk pada data yang memang tersedia. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-challenge",
+      "title": "HR Interview — Apa tantangan terbesar yang pernah Anda hadapi?",
+      "content": "Pertanyaan HR: Apa tantangan terbesar yang pernah Anda hadapi?. Contoh jawaban Hari: Dalam pekerjaan software engineering, tantangan yang pernah menjadi bagian dari tanggung jawab saya antara lain menjaga stabilitas aplikasi, melakukan debugging, mengintegrasikan API, dan memastikan implementasi sesuai kebutuhan UI/UX. Saya biasanya memecah masalah, memeriksa alur data dan kode terkait, lalu berkoordinasi dengan tim jika membutuhkan dukungan lintas fungsi. Untuk contoh kasus spesifik, saya akan menjelaskan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-challenge:part:431",
+      "title": "HR Interview — Apa tantangan terbesar yang pernah Anda hadapi?",
+      "content": "uhkan dukungan lintas fungsi. Untuk contoh kasus spesifik, saya akan menjelaskan kejadian nyata sesuai pengalaman yang dapat saya verifikasi. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-teamwork",
+      "title": "HR Interview — Bagaimana cara Anda bekerja dalam tim?",
+      "content": "Pertanyaan HR: Bagaimana cara Anda bekerja dalam tim?. Contoh jawaban Hari: Saya terbiasa berkolaborasi dengan frontend engineer, backend engineer, dan pihak terkait lainnya. Saya berusaha menjaga komunikasi tetap jelas, menyepakati kebutuhan dan alur integrasi, terbuka terhadap code review, serta menyampaikan kendala sedini mungkin agar pekerjaan tim tetap terarah. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian,",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-teamwork:part:434",
+      "title": "HR Interview — Bagaimana cara Anda bekerja dalam tim?",
+      "content": "dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-conflict",
+      "title": "HR Interview — Bagaimana Anda menghadapi konflik atau perbedaan pendapat?",
+      "content": "Pertanyaan HR: Bagaimana Anda menghadapi konflik atau perbedaan pendapat?. Contoh jawaban Hari: Saya berusaha memahami alasan dan kebutuhan di balik pendapat masing-masing, kemudian membandingkan pilihan berdasarkan kebutuhan produk, dampak teknis, maintainability, dan waktu pengerjaan. Saya terbuka terhadap masukan dan berusaha menjaga diskusi tetap fokus pada solusi. Untuk contoh konflik tertentu, saya tidak akan mengarang kejadian yang tidak tercatat. Panduan: sampaikan dengan bahasa natural, ringkas, dan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-conflict:part:433",
+      "title": "HR Interview — Bagaimana Anda menghadapi konflik atau perbedaan pendapat?",
+      "content": "dian yang tidak tercatat. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-pressure",
+      "title": "HR Interview — Bagaimana Anda bekerja di bawah tekanan atau deadline?",
+      "content": "Pertanyaan HR: Bagaimana Anda bekerja di bawah tekanan atau deadline?. Contoh jawaban Hari: Saya biasanya mengidentifikasi prioritas, memecah pekerjaan menjadi bagian yang lebih kecil, dan memastikan risiko atau blocker dikomunikasikan lebih awal. Saya juga berusaha menjaga kualitas pada bagian yang kritis dan berkoordinasi dengan tim jika ada perubahan prioritas atau estimasi. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka,",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-pressure:part:436",
+      "title": "HR Interview — Bagaimana Anda bekerja di bawah tekanan atau deadline?",
+      "content": "sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-failure",
+      "title": "HR Interview — Ceritakan kegagalan atau kesalahan yang pernah Anda lakukan",
+      "content": "Pertanyaan HR: Ceritakan kegagalan atau kesalahan yang pernah Anda lakukan. Contoh jawaban Hari: Saya memandang kesalahan sebagai kesempatan untuk memperbaiki proses kerja. Jika menemukan kesalahan, saya berusaha memahami penyebabnya, memperbaiki dampaknya, melakukan pengujian yang relevan, dan mengambil pelajaran agar masalah serupa dapat dicegah. Untuk contoh kejadian spesifik, saya perlu menggunakan pengalaman nyata yang dapat saya ceritakan secara akurat. Panduan: sampaikan dengan bahasa natural, ringkas, dan",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-failure:part:438",
+      "title": "HR Interview — Ceritakan kegagalan atau kesalahan yang pernah Anda lakukan",
+      "content": "ceritakan secara akurat. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-leaving",
+      "title": "HR Interview — Mengapa Anda ingin pindah dari pekerjaan sekarang?",
+      "content": "Pertanyaan HR: Mengapa Anda ingin pindah dari pekerjaan sekarang?. Contoh jawaban Hari: Saya ingin memahami peluang berikutnya yang dapat memberikan ruang untuk berkembang dan berkontribusi lebih luas sebagai Software Engineer. Saya tetap menghargai pengalaman dan pembelajaran dari pekerjaan saat ini. Alasan pribadi atau kondisi internal perusahaan tidak boleh ditambahkan kecuali memang ingin saya sampaikan secara langsung. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-leaving:part:436",
+      "title": "HR Interview — Mengapa Anda ingin pindah dari pekerjaan sekarang?",
+      "content": "sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-career-goals",
+      "title": "HR Interview — Apa rencana karier Anda dalam tiga sampai lima tahun ke depan?",
+      "content": "Pertanyaan HR: Apa rencana karier Anda dalam tiga sampai lima tahun ke depan?. Contoh jawaban Hari: Saya ingin terus berkembang sebagai Software Engineer dengan pemahaman yang lebih kuat pada arsitektur aplikasi, kualitas engineering, dan pengembangan solusi end-to-end. Saya juga ingin memperdalam AI Engineering melalui praktik yang nyata, sambil tetap membangun fondasi software engineering yang kuat. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-career-goals:part:434",
+      "title": "HR Interview — Apa rencana karier Anda dalam tiga sampai lima tahun ke depan?",
+      "content": "asa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-salary",
+      "title": "HR Interview — Berapa ekspektasi gaji Anda?",
+      "content": "Pertanyaan HR: Berapa ekspektasi gaji Anda?. Contoh jawaban Hari: Saya terbuka untuk mendiskusikan kompensasi berdasarkan tanggung jawab posisi, ruang lingkup pekerjaan, level yang dibutuhkan, dan keseluruhan benefit. Saya ingin memahami ekspektasi perusahaan terlebih dahulu agar kita dapat menemukan angka yang sesuai. Saya tidak akan menyebut nominal sebelum target gaji Hari tersedia dan dikonfirmasi. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-salary:part:435",
+      "title": "HR Interview — Berapa ekspektasi gaji Anda?",
+      "content": "asa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-availability",
+      "title": "HR Interview — Kapan Anda bisa mulai bergabung?",
+      "content": "Pertanyaan HR: Kapan Anda bisa mulai bergabung?. Contoh jawaban Hari: Berdasarkan informasi ketersediaan yang tercatat di portfolio, saya tersedia untuk bergabung segera. Detail tanggal efektif tetap dapat dikonfirmasi kembali sesuai proses administrasi dan kesepakatan dengan perusahaan. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-work-arrangement",
+      "title": "HR Interview — Apakah Anda bersedia bekerja WFO, WFH, atau hybrid?",
+      "content": "Pertanyaan HR: Apakah Anda bersedia bekerja WFO, WFH, atau hybrid?. Contoh jawaban Hari: Saya fleksibel dan terbuka untuk mendiskusikan pengaturan kerja sesuai kebutuhan posisi dan kebijakan perusahaan. Saya ingin memahami ketentuan lokasi, jadwal, dan pola kolaborasi tim terlebih dahulu. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-learning",
+      "title": "HR Interview — Bagaimana Anda mempelajari teknologi baru?",
+      "content": "Pertanyaan HR: Bagaimana Anda mempelajari teknologi baru?. Contoh jawaban Hari: Saya biasanya mulai dari memahami konsep dan dokumentasi, kemudian mencoba menerapkannya dalam project kecil atau kebutuhan nyata. Contohnya, saya sedang mengembangkan AI Portfolio Assistant menggunakan React, FastAPI, Groq, RAG, embeddings, dan FAISS untuk memperdalam pemahaman AI Engineering. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka,",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-learning:part:431",
+      "title": "HR Interview — Bagaimana Anda mempelajari teknologi baru?",
+      "content": "sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-motivation",
+      "title": "HR Interview — Apa yang memotivasi Anda dalam bekerja?",
+      "content": "Pertanyaan HR: Apa yang memotivasi Anda dalam bekerja?. Contoh jawaban Hari: Saya termotivasi ketika bisa menyelesaikan masalah melalui solusi teknologi yang berguna, melihat aplikasi berjalan dengan baik, dan terus meningkatkan kualitas hasil kerja. Saya juga menikmati proses belajar dan berbagi pemahaman dengan rekan satu tim. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-motivation:part:437",
+      "title": "HR Interview — Apa yang memotivasi Anda dalam bekerja?",
+      "content": "ar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-independent",
+      "title": "HR Interview — Apakah Anda lebih suka bekerja sendiri atau dalam tim?",
+      "content": "Pertanyaan HR: Apakah Anda lebih suka bekerja sendiri atau dalam tim?. Contoh jawaban Hari: Saya bisa bekerja mandiri maupun dalam tim. Untuk pekerjaan yang membutuhkan fokus implementasi, saya nyaman mengerjakannya secara mandiri. Namun, untuk kebutuhan produk dan integrasi, saya mengutamakan koordinasi dan kolaborasi agar hasilnya sesuai tujuan bersama. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi,",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-independent:part:439",
+      "title": "HR Interview — Apakah Anda lebih suka bekerja sendiri atau dalam tim?",
+      "content": "n serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-questions-for-company",
+      "title": "HR Interview — Apakah Anda memiliki pertanyaan untuk kami?",
+      "content": "Pertanyaan HR: Apakah Anda memiliki pertanyaan untuk kami?. Contoh jawaban Hari: Ya. Saya ingin mengetahui prioritas utama untuk posisi ini dalam tiga sampai enam bulan pertama, bagaimana struktur tim engineering dan proses kolaborasinya, serta tantangan teknis yang saat ini sedang ingin diselesaikan oleh perusahaan. Panduan: sampaikan dengan bahasa natural, ringkas, dan sesuaikan dengan pertanyaan serta posisi yang dilamar. Jangan menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-questions-for-company:part:436",
+      "title": "HR Interview — Apakah Anda memiliki pertanyaan untuk kami?",
+      "content": "menambahkan angka, kejadian, alasan pribadi, nominal gaji, atau klaim yang tidak didukung knowledge base.",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-interview-overview",
+      "title": "HR Interview — Preparation Guide and Question Coverage",
+      "content": "Knowledge base ini mencakup pertanyaan HR/recruiter: perkenalan diri; pekerjaan saat ini; perjalanan karier; alasan melamar; alasan perusahaan perlu menerima kandidat; kelebihan; area pengembangan; pencapaian; tantangan; teamwork; konflik; tekanan dan deadline; kegagalan dan pembelajaran; alasan mencari peluang baru; rencana karier; ekspektasi gaji; ketersediaan bergabung; preferensi WFO/WFH/hybrid; cara mempelajari teknologi; motivasi kerja; preferensi kerja mandiri atau tim; dan pertanyaan balik untuk",
+      "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "hr-interview-overview:part:428",
+      "title": "HR Interview — Preparation Guide and Question Coverage",
+      "content": "i; motivasi kerja; preferensi kerja mandiri atau tim; dan pertanyaan balik untuk perusahaan. Jawaban disusun sebagai contoh berbasis fakta portfolio Hari, bukan klaim bahwa semua contoh perilaku tersebut merupakan kejadian spesifik yang telah diverifikasi. Jika detail tidak tersedia, jawab secara jujur dan minta Hari menambahkan contoh atau informasi yang benar.",
+      "url": "/#about",
       "source_type": "json",
       "source_file": "knowledge.json"
     },

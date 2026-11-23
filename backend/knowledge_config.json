@@ -11,7 +11,19 @@
         "tentang",
         "profil",
         "asal",
-        "latar belakang"
+        "latar belakang",
+        "siapa saya",
+        "siapa hari",
+        "nama lengkap",
+        "nama saya",
+        "identitas diri",
+        "perkenalan",
+        "perkenalan diri",
+        "tentang hari",
+        "cerita tentang hari",
+        "personal profile",
+        "basic information",
+        "biodata"
       ],
       "keywords": [
         "profile",
@@ -19,7 +31,13 @@
         "asal mana",
         "berasal dari",
         "latar belakang",
-        "siapa hari"
+        "siapa hari",
+        "nama lengkap hari",
+        "hari kurniawan",
+        "identitas hari",
+        "perkenalkan hari",
+        "ceritakan tentang hari",
+        "siapa nama hari"
       ],
       "section": "about"
     },
@@ -36,7 +54,17 @@
         "perjalanan karier",
         "riwayat karier",
         "career history",
-        "work history"
+        "work history",
+        "current job",
+        "current employer",
+        "current company",
+        "pekerjaan sekarang",
+        "kerja sekarang",
+        "perusahaan sekarang",
+        "tempat kerja sekarang",
+        "kantor sekarang",
+        "posisi sekarang",
+        "jabatan sekarang"
       ],
       "keywords": [
         "pengalaman kerja",
@@ -46,7 +74,18 @@
         "tempat kerja",
         "work history",
         "employment history",
-        "kontribusi"
+        "kontribusi",
+        "sekarang bekerja di mana",
+        "sekarang kerja di mana",
+        "saat ini bekerja di",
+        "saat ini kerja di",
+        "perusahaan tempat hari bekerja",
+        "kantor hari",
+        "jabatan hari sekarang",
+        "posisi hari saat ini",
+        "current employer",
+        "current position",
+        "current workplace"
       ],
       "section": "experience"
     },
@@ -77,12 +116,7 @@
     "projects": {
       "label": "Projects",
       "description": "Project, produk, aplikasi, dan implementasi teknis",
-      "aliases": [
-        "projects",
-        "project",
-        "proyek",
-        "portfolio project"
-      ],
+      "aliases": ["projects", "project", "proyek", "portfolio project"],
       "keywords": [
         "project",
         "proyek",
@@ -95,13 +129,7 @@
     "education": {
       "label": "Education",
       "description": "Riwayat pendidikan formal",
-      "aliases": [
-        "education",
-        "pendidikan",
-        "kuliah",
-        "universitas",
-        "kampus"
-      ],
+      "aliases": ["education", "pendidikan", "kuliah", "universitas", "kampus"],
       "keywords": [
         "pendidikan",
         "riwayat pendidikan",
@@ -187,7 +215,30 @@
         "hobi",
         "hobby",
         "bahasa",
-        "kepribadian"
+        "kepribadian",
+        "personal information",
+        "personal details",
+        "personal background",
+        "informasi pribadi",
+        "data diri",
+        "tentang saya",
+        "tentang dirinya",
+        "tempat tinggal",
+        "tinggal di mana",
+        "tinggal dimana",
+        "domisili saat ini",
+        "lokasi tempat tinggal",
+        "kota asal",
+        "kampung halaman",
+        "tanggal lahir",
+        "tanggal kelahiran",
+        "permainan favorit",
+        "game favorit",
+        "karakter diri",
+        "sifat",
+        "minat",
+        "interest",
+        "interests"
       ],
       "keywords": [
         "Hari Kurniawan",
@@ -200,7 +251,35 @@
         "PUBG",
         "bahasa Indonesia",
         "bahasa Inggris",
-        "bahasa Malaysia"
+        "bahasa Malaysia",
+        "nama lengkap",
+        "nama panggilan",
+        "asal dari mana",
+        "berasal dari kota",
+        "kota kelahiran",
+        "tempat lahir",
+        "domisili sekarang",
+        "berdomisili di",
+        "saat ini tinggal",
+        "tinggal sekarang",
+        "alamat domisili",
+        "tanggal lahir",
+        "umur",
+        "usia",
+        "hobi",
+        "game pc",
+        "dota 2",
+        "valorant",
+        "pubg",
+        "bahasa yang digunakan",
+        "bahasa yang dikuasai",
+        "bahasa indonesia",
+        "bahasa inggris",
+        "bahasa malaysia",
+        "kepribadian",
+        "karakter",
+        "tentang diri hari",
+        "biodata hari"
       ],
       "section": "about"
     },
@@ -298,6 +377,51 @@
         "vector search"
       ],
       "section": "projects"
+    },
+    "hr_interview": {
+      "label": "HR Interview",
+      "description": "Pertanyaan interview HRD dan recruiter tentang perkenalan diri, motivasi melamar, pengalaman, kelebihan dan area pengembangan, teamwork, konflik, tekanan kerja, ekspektasi, ketersediaan, dan rencana karier. Jawaban harus disesuaikan dengan fakta yang tersedia di portfolio Hari.",
+      "aliases": [
+        "hr interview",
+        "hrd interview",
+        "interview hr",
+        "interview recruiter",
+        "human resources interview",
+        "behavioral interview",
+        "behavior interview",
+        "pertanyaan hr",
+        "pertanyaan hrd",
+        "wawancara kerja",
+        "interview kerja",
+        "persiapan interview",
+        "simulasi interview",
+        "mock interview"
+      ],
+      "keywords": [
+        "ceritakan tentang diri kamu",
+        "tell me about yourself",
+        "perkenalkan diri",
+        "kenapa melamar",
+        "mengapa tertarik",
+        "alasan pindah kerja",
+        "kelebihan dan kekurangan",
+        "strengths and weaknesses",
+        "gaji yang diharapkan",
+        "salary expectation",
+        "konflik di tempat kerja",
+        "bekerja dalam tim",
+        "menghadapi tekanan",
+        "rencana karier",
+        "career goals",
+        "kapan bisa bergabung",
+        "availability",
+        "alasan kami menerima kamu",
+        "why should we hire you",
+        "pencapaian terbesar",
+        "kegagalan",
+        "tantangan terbesar"
+      ],
+      "section": "experience"
     }
   },
   "intent_detection": {
@@ -334,19 +458,45 @@
       "perjalanan karier",
       "riwayat karier",
       "career journey",
-      "career history"
+      "career history",
+      "siapa saya",
+      "nama lengkap",
+      "asal dari mana",
+      "tinggal di mana",
+      "tinggal dimana",
+      "domisili sekarang",
+      "kerja sekarang di mana",
+      "sekarang bekerja di mana",
+      "perusahaan sekarang",
+      "ceritakan tentang hari",
+      "ceritakan tentang saya",
+      "biodata",
+      "informasi pribadi",
+      "personal background",
+      "hr interview",
+      "interview hrd",
+      "pertanyaan hrd",
+      "pertanyaan hr",
+      "simulasi interview",
+      "mock interview",
+      "ceritakan tentang diri kamu",
+      "tell me about yourself",
+      "kenapa kami harus menerima kamu",
+      "why should we hire you",
+      "kelebihan dan kekurangan",
+      "salary expectation",
+      "ekspektasi gaji",
+      "alasan pindah kerja",
+      "rencana karier"
     ],
-    "broad_verbs": [
-      "jelaskan",
-      "ceritakan",
-      "tampilkan",
-      "sebutkan",
-      "daftar"
-    ]
+    "broad_verbs": ["jelaskan", "ceritakan", "tampilkan", "sebutkan", "daftar"]
   },
   "answer_policy": {
     "language": "Follow the visitor's language.",
     "grounding": "Only state facts supported by retrieved JSON or PDF context. If information is missing, explicitly say it is not available in the portfolio. Never guess or invent personal, career, salary, location, notice-period, or employment details.",
-    "pdf_json": "Use relevant JSON facts and PDF passages together. If sources conflict, identify the discrepancy and do not silently merge conflicting facts."
+    "pdf_json": "Use relevant JSON facts and PDF passages together. If sources conflict, identify the discrepancy and do not silently merge conflicting facts.",
+    "personal_facts": "For questions about Hari's name, origin, date of birth, age, residence, hobbies, languages, and personality, retrieve the personal category. For current employer, job title, and work history, retrieve the experience category. For a question that asks several of these facts together, use all relevant retrieved records. Never infer a street address, exact workplace address, or other personal detail that is not present.",
+    "conversation": "Answer greetings and general conversational questions naturally without requiring portfolio retrieval. For questions about Hari, use the relevant portfolio evidence. If several personal or professional facts are requested together, answer each supported part in one coherent response and explicitly mark any missing information.",
+    "hr_interview": "For HR/recruiter interview questions, answer in first person as Hari, naturally and professionally, using only facts supported by the knowledge base. Use concise spoken answers by default (about 30–60 seconds). For behavioral questions, do not invent a specific incident, metric, team size, salary, reason for leaving, or conflict; use a supported example if one exists, otherwise provide an honest answer framework and mark which detail Hari should personalize. For salary expectations, ask for or use Hari's explicit target only if it exists in the knowledge base; otherwise say it is open for discussion based on role scope and total compensation, without naming a number. For availability, use the career-availability record. Distinguish confirmed work history from independent learning projects. Reply in the visitor's language."
   }
 }

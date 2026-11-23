@@ -22,20 +22,23 @@ RUN pip install --no-cache-dir --upgrade pip \
        torch==2.15.0 \
        --index-url https://download.pytorch.org/whl/cpu
 
-# Install remaining dependencies without replacing CPU PyTorch
+# Install remaining dependencies
 RUN pip install --no-cache-dir \
     --constraint constraints-cpu.txt \
     -r requirements.txt
 
-# Copy application
+# Copy application and knowledge sources
 COPY . .
 
-# Create application user
+# Create application user and prepare cache
 RUN useradd --create-home --shell /usr/sbin/nologin appuser \
     && mkdir -p /home/appuser/.cache/huggingface \
     && chown -R appuser:appuser /app /home/appuser
 
 USER appuser
+
+# Build FAISS index during Docker image build
+RUN python build_index.py
 
 EXPOSE 8000
 
