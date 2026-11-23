@@ -43,8 +43,8 @@
   },
   {
     "id": "beacukai-role",
-    "title": "Directorate General of Customs and Excise role",
-    "content": "Full-Stack Developer at Directorate General of Customs and Excise (DJBC), February 2020 to January 2021. Developed and maintained internal applications using React.js, React Native, and Vue.js with Ant Design. Worked with .NET Core and SQL Server for backend services and data integration. Built mobile application features, integrated REST APIs, implemented features and bug fixes tracked in Jira, and collaborated with multidisciplinary engineering teams.",
+    "title": "Direktorat Jenderal Bea dan Cukai role",
+    "content": "Full-Stack Developer at Direktorat Jenderal Bea dan Cukai (DJBC), February 2020 to January 2021. Developed and maintained internal applications using React.js, React Native, and Vue.js with Ant Design. Worked with .NET Core and SQL Server for backend services and data integration. Built mobile application features, integrated REST APIs, implemented features and bug fixes tracked in Jira, and collaborated with multidisciplinary engineering teams.",
     "url": "/#experience",
     "category": "experience"
   },

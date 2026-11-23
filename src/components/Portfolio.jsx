@@ -40,7 +40,7 @@ const projects = [
   {
     image: "assets/img/bea.png",
     title: "Ceisa 4.0",
-    category: "Directorate General of Customs and Excise",
+    category: "Direktorat Jenderal Bea dan Cukai",
     period: "2020 — 2021",
     description:
       "Worked on internal and digital service features with React, React Native, and Vue.js while collaborating with backend services and enterprise application workflows.",

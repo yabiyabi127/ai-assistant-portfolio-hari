@@ -38,7 +38,7 @@ const experience = [
     stack: ["Angular", "TypeScript", "HTML", "Sass", "REST API"],
   },
   {
-    company: "Directorate General of Customs and Excise (DJBC)",
+    company: "Direktorat Jenderal Bea dan Cukai (DJBC)",
     role: "Full-Stack Developer",
     period: "February 2020 — January 2021",
     detail:

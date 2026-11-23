@@ -1065,36 +1065,56 @@
     background: #03050ab0;
     backdrop-filter: blur(3px);
   }
+
   .workspace-main {
     margin: 0;
     width: 100%;
-    min-height: 100dvh;
+    height: var(--app-viewport-height, 100dvh);
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
+
   .workspace-topbar {
     height: 56px;
     padding: 0 15px;
     gap: 12px;
   }
+
   .mobile-menu-button {
     display: block;
   }
+
   .topbar-breadcrumb {
     flex: 1;
     font-size: 10px;
   }
+
   .topbar-availability {
     display: none;
   }
+
   .workspace-content {
     padding: 0 15px;
-    min-height: calc(100dvh - 100px);
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
+
   .workspace-footer {
     padding: 14px 16px;
     font-size: 8px;
   }
   .chat-home {
-    min-height: calc(100dvh - 100px);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
   }
   .chat-topline {
     height: 48px;
@@ -1148,14 +1168,23 @@
     width: 100%;
   }
   .chat-composer-wrap {
-    padding-bottom: 14px;
+    position: relative;
+    inset: auto;
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: auto;
+    padding: 10px 0;
+    z-index: 2;
+    background: var(--bg);
   }
   .chat-composer {
     padding: 11px;
     border-radius: 14px;
   }
   .chat-composer textarea {
-    font-size: 12px;
+    font-size: 16px;
+    max-height: 100px;
+    resize: none;
   }
   .composer-bottom > span {
     font-size: 8px;
@@ -1164,7 +1193,13 @@
     font-size: 8px;
   }
   .chat-conversation {
-    max-height: calc(100dvh - 220px);
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     padding-top: 14px;
   }
   .conversation-message {
@@ -4407,48 +4442,1099 @@ body {
 }
 
 /* Markdown jawaban AI dan efek pengetikan streaming. */
-.chat-markdown { color: var(--soft); font-size: 13px; line-height: 1.8; overflow-wrap: anywhere; }
-.chat-markdown > :first-child { margin-top: 0; }
-.chat-markdown > :last-child { margin-bottom: 0; }
-.chat-markdown p { margin: 0 0 11px; white-space: normal; }
-.chat-markdown h1, .chat-markdown h2, .chat-markdown h3, .chat-markdown h4 { color: var(--text); line-height: 1.35; margin: 18px 0 9px; font-weight: 700; }
-.chat-markdown h1 { font-size: 19px; }
-.chat-markdown h2 { font-size: 17px; }
-.chat-markdown h3 { font-size: 15px; }
-.chat-markdown h4 { font-size: 14px; }
-.chat-markdown ul, .chat-markdown ol { margin: 7px 0 13px; padding-left: 22px; }
-.chat-markdown li { margin: 4px 0; padding-left: 2px; }
-.chat-markdown strong { color: var(--text); font-weight: 700; }
-.chat-markdown a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
-.chat-markdown code { border: 1px solid var(--line); background: var(--panel2); border-radius: 5px; padding: 2px 5px; font-size: .9em; }
-.chat-markdown pre { overflow-x: auto; padding: 13px; border: 1px solid var(--line); background: var(--panel); border-radius: 10px; margin: 10px 0 14px; }
-.chat-markdown pre code { border: 0; padding: 0; background: transparent; }
-.chat-markdown-table-wrap { width: 100%; overflow-x: auto; margin: 12px 0 15px; border: 1px solid var(--line); border-radius: 10px; }
-.chat-markdown-table { width: 100%; border-collapse: collapse; min-width: 420px; font-size: 12px; }
-.chat-markdown-table th, .chat-markdown-table td { text-align: left; vertical-align: top; padding: 9px 11px; border-bottom: 1px solid var(--line); }
-.chat-markdown-table th { color: var(--text); background: var(--panel2); font-weight: 700; }
-.chat-markdown-table tr:last-child td { border-bottom: 0; }
-.streaming-caret { display: inline-block; width: 7px; height: 1.05em; margin-left: 3px; vertical-align: -2px; border-radius: 2px; background: var(--accent); animation: hari-caret-blink 1s steps(2, start) infinite; }
-@keyframes hari-caret-blink { to { visibility: hidden; } }
-.stop-generation-button { display: grid; place-items: center; width: 40px; height: 40px; border: 0; border-radius: 12px; color: var(--text); background: var(--panel2); cursor: pointer; }
-.stop-generation-button:hover { outline: 1px solid var(--accent); }
-.conversation-message.assistant .chat-markdown { animation: answer-fade-in .22s ease both; }
-@keyframes answer-fade-in { from { opacity: .65; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
-.portfolio-shell.theme-light .chat-markdown { color: var(--soft); }
+.chat-markdown {
+  color: var(--soft);
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.chat-markdown > :first-child {
+  margin-top: 0;
+}
+.chat-markdown > :last-child {
+  margin-bottom: 0;
+}
+.chat-markdown p {
+  margin: 0 0 11px;
+  white-space: normal;
+}
+.chat-markdown h1,
+.chat-markdown h2,
+.chat-markdown h3,
+.chat-markdown h4 {
+  color: var(--text);
+  line-height: 1.35;
+  margin: 18px 0 9px;
+  font-weight: 700;
+}
+.chat-markdown h1 {
+  font-size: 19px;
+}
+.chat-markdown h2 {
+  font-size: 17px;
+}
+.chat-markdown h3 {
+  font-size: 15px;
+}
+.chat-markdown h4 {
+  font-size: 14px;
+}
+.chat-markdown ul,
+.chat-markdown ol {
+  margin: 7px 0 13px;
+  padding-left: 22px;
+}
+.chat-markdown li {
+  margin: 4px 0;
+  padding-left: 2px;
+}
+.chat-markdown strong {
+  color: var(--text);
+  font-weight: 700;
+}
+.chat-markdown a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.chat-markdown code {
+  border: 1px solid var(--line);
+  background: var(--panel2);
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 0.9em;
+}
+.chat-markdown pre {
+  overflow-x: auto;
+  padding: 13px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 10px;
+  margin: 10px 0 14px;
+}
+.chat-markdown pre code {
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+.chat-markdown-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 12px 0 15px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.chat-markdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 420px;
+  font-size: 12px;
+}
+.chat-markdown-table th,
+.chat-markdown-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--line);
+}
+.chat-markdown-table th {
+  color: var(--text);
+  background: var(--panel2);
+  font-weight: 700;
+}
+.chat-markdown-table tr:last-child td {
+  border-bottom: 0;
+}
+.streaming-caret {
+  display: inline-block;
+  width: 7px;
+  height: 1.05em;
+  margin-left: 3px;
+  vertical-align: -2px;
+  border-radius: 2px;
+  background: var(--accent);
+  animation: hari-caret-blink 1s steps(2, start) infinite;
+}
+@keyframes hari-caret-blink {
+  to {
+    visibility: hidden;
+  }
+}
+.stop-generation-button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 12px;
+  color: var(--text);
+  background: var(--panel2);
+  cursor: pointer;
+}
+.stop-generation-button:hover {
+  outline: 1px solid var(--accent);
+}
+.conversation-message.assistant .chat-markdown {
+  animation: answer-fade-in 0.22s ease both;
+}
+@keyframes answer-fade-in {
+  from {
+    opacity: 0.65;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.portfolio-shell.theme-light .chat-markdown {
+  color: var(--soft);
+}
 .portfolio-shell.theme-light .chat-markdown strong,
 .portfolio-shell.theme-light .chat-markdown h1,
 .portfolio-shell.theme-light .chat-markdown h2,
 .portfolio-shell.theme-light .chat-markdown h3,
-.portfolio-shell.theme-light .chat-markdown h4 { color: var(--text); }
-@media (prefers-reduced-motion: reduce) {
-  .streaming-caret, .conversation-message.assistant .chat-markdown { animation: none; }
+.portfolio-shell.theme-light .chat-markdown h4 {
+  color: var(--text);
 }
-.chat-markdown { font-size: 15px; line-height: 1.8; }
-.conversation-message.user .chat-markdown { font-size: 14px; line-height: 1.7; color: var(--soft); }
-.portfolio-shell.theme-light .conversation-message.user .chat-markdown { color: #526078; }
-.portfolio-shell.theme-light .conversation-message.assistant .chat-markdown { color: #263247; }
+@media (prefers-reduced-motion: reduce) {
+  .streaming-caret,
+  .conversation-message.assistant .chat-markdown {
+    animation: none;
+  }
+}
+.chat-markdown {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.conversation-message.user .chat-markdown {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--soft);
+}
+.portfolio-shell.theme-light .conversation-message.user .chat-markdown {
+  color: #526078;
+}
+.portfolio-shell.theme-light .conversation-message.assistant .chat-markdown {
+  color: #263247;
+}
 @media (max-width: 700px) {
-  .chat-markdown { font-size: 14px; line-height: 1.72; }
-  .conversation-message.user .chat-markdown { font-size: 13px; }
-  .chat-markdown-table { min-width: 380px; }
+  .chat-markdown {
+    font-size: 14px;
+    line-height: 1.72;
+  }
+  .conversation-message.user .chat-markdown {
+    font-size: 13px;
+  }
+  .chat-markdown-table {
+    min-width: 380px;
+  }
+}
+
+/* =========================================================
+   MOBILE CHAT FIX — keyboard viewport, composer, and overflow
+   ========================================================= */
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.portfolio-shell,
+.workspace-main,
+.workspace-content,
+.chat-home,
+.chat-intro-shell,
+.chat-conversation,
+.chat-composer-wrap,
+.chat-composer,
+.message-content {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.portfolio-shell {
+  min-height: var(--app-viewport-height, 100dvh);
+}
+
+@media (max-width: 700px) {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    overflow-x: clip !important;
+  }
+
+  .portfolio-shell {
+    min-height: var(--app-viewport-height, 100dvh);
+    height: auto;
+    overflow-x: clip;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .workspace-main {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--app-viewport-height, 100dvh);
+    width: 100%;
+    padding-top: 48px;
+  }
+
+  .workspace-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    overflow-x: clip;
+  }
+
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(var(--app-viewport-height, 100dvh) - 60px);
+    height: auto;
+    padding-bottom: 12px;
+  }
+
+  .chat-intro-shell {
+    width: 100%;
+    min-height: 0;
+  }
+
+  .chat-welcome {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .chat-composer-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-composer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .chat-composer textarea {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 42px;
+    max-height: 112px;
+    resize: none;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 1.45;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .chat-conversation {
+    flex: 1 1 auto;
+    min-height: 160px;
+    max-height: none;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 18px;
+  }
+
+  .message-sources {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .message-sources a,
+  .message-sources button {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .workspace-footer {
+    flex: 0 0 auto;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer-wrap .composer-disclaimer {
+    display: none;
+  }
+
+  .portfolio-shell.keyboard-open .chat-home {
+    padding-bottom: 118px;
+  }
+
+  .portfolio-shell.keyboard-open .chat-conversation {
+    max-height: none;
+    min-height: 120px;
+  }
+
+  .portfolio-shell.keyboard-open .workspace-footer {
+    display: none;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer textarea {
+    max-height: 88px;
+  }
+}
+
+@media (max-width: 380px) {
+  .chat-model-pill {
+    max-width: calc(100vw - 112px);
+  }
+
+  .composer-bottom {
+    gap: 6px;
+  }
+
+  .composer-bottom > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================================
+   FINAL LAYOUT OVERRIDES
+   Desktop composer width + mobile keyboard layout
+   Keep this block at the very end of the stylesheet.
+   ========================================================= */
+
+/* Desktop/tablet: keep the chat composer centered and constrained. */
+@media (min-width: 701px) {
+  .portfolio-shell {
+    min-width: 0;
+  }
+
+  .workspace-content {
+    min-width: 0;
+  }
+
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    width: 100%;
+    max-width: 1050px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-intro-shell {
+    width: 100%;
+    max-width: 860px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-composer-wrap,
+  .intro-composer-wrap {
+    display: block;
+    width: 100%;
+    max-width: 820px;
+    min-width: 0;
+    margin: 12px auto 0;
+    padding: 0 0 18px;
+    position: relative;
+    inset: auto;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .chat-composer {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 96px;
+    height: auto;
+  }
+
+  .chat-composer textarea {
+    width: 100%;
+    min-width: 0;
+    min-height: 38px;
+    max-height: 130px;
+    font-size: 14px;
+  }
+
+  .chat-conversation {
+    width: 100%;
+    max-width: 850px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile: use the available visual viewport; no fixed/floating composer. */
+@media (max-width: 700px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100%;
+  }
+
+  .portfolio-shell {
+    display: block;
+    width: 100%;
+    height: var(--app-viewport-height, 100dvh);
+    min-height: 0;
+    max-height: var(--app-viewport-height, 100dvh);
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .workspace-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    margin: 0;
+    padding-top: 48px;
+    overflow: hidden;
+  }
+
+  .workspace-topbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 48px;
+    min-height: 48px;
+    padding-left: max(14px, env(safe-area-inset-left));
+    padding-right: max(14px, env(safe-area-inset-right));
+    z-index: 100;
+  }
+
+  .workspace-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    margin: 0;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    overflow: hidden;
+  }
+
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 0 8px;
+    overflow: hidden;
+  }
+
+  .chat-topline {
+    flex: 0 0 auto;
+    min-height: 44px;
+    height: auto;
+    margin: 0 0 8px;
+  }
+
+  .chat-intro-shell {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .chat-welcome {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .suggestion-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .chat-composer-wrap,
+  .intro-composer-wrap {
+    display: block;
+    flex: 0 0 auto;
+    position: relative !important;
+    inset: auto !important;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin: 8px 0 0;
+    padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    z-index: 2;
+  }
+
+  .chat-composer {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 104px;
+    height: auto;
+    padding: 11px;
+    box-sizing: border-box;
+    background: var(--panel);
+    border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+    border-radius: 16px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  }
+
+  .chat-composer textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    max-height: 100px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 16px;
+    line-height: 1.45;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .composer-bottom {
+    min-width: 0;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .composer-bottom > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .composer-disclaimer {
+    margin-top: 7px;
+    font-size: 8px;
+    line-height: 1.35;
+  }
+
+  .chat-conversation {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    margin: 0;
+    padding: 14px 3px 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .message-content,
+  .chat-markdown {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .message-sources {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .message-sources a,
+  .message-sources button {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .workspace-footer {
+    flex: 0 0 auto;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+
+  /* Keyboard open: do not add artificial bottom padding or a black backing box. */
+  .portfolio-shell.keyboard-open .chat-home,
+  .portfolio-shell.keyboard-open .chat-home.is-empty,
+  .portfolio-shell.keyboard-open .chat-home.has-messages {
+    min-height: 0;
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer-wrap,
+  .portfolio-shell.keyboard-open .intro-composer-wrap {
+    position: relative !important;
+    inset: auto !important;
+    margin-top: 4px;
+    padding-top: 6px;
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer textarea {
+    max-height: 88px;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer-wrap .composer-disclaimer {
+    display: none;
+  }
+
+  .portfolio-shell.keyboard-open .chat-conversation {
+    min-height: 0;
+    max-height: none;
+  }
+
+  .portfolio-shell.keyboard-open .workspace-footer {
+    display: none;
+  }
+}
+
+/* Very narrow phones. */
+@media (max-width: 380px) {
+  .chat-model-pill {
+    max-width: calc(100vw - 112px);
+  }
+
+  .composer-bottom {
+    gap: 6px;
+  }
+
+  .composer-bottom > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================================
+   FINAL PATCH 3 — stable iOS focus + aligned desktop composer
+   Replaces focus-driven :has()/absolute positioning that can
+   interfere with Safari's native keyboard focus behavior.
+   ========================================================= */
+
+@media (min-width: 701px) {
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    width: 100%;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-intro-shell {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-composer-wrap,
+  .intro-composer-wrap {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 12px auto 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .chat-composer {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .chat-composer textarea {
+    font-size: 14px;
+    min-height: 42px;
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .portfolio-shell {
+    height: var(--app-viewport-height, 100dvh);
+    min-height: 0;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .workspace-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .workspace-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    max-height: 100%;
+    margin: 0;
+    padding: 0 0 8px;
+    overflow: hidden;
+  }
+
+  .chat-intro-shell {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chat-composer-wrap,
+  .intro-composer-wrap {
+    display: block;
+    position: relative;
+    inset: auto;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: auto 0 0;
+    padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    z-index: 2;
+  }
+
+  .chat-composer {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 88px;
+    box-sizing: border-box;
+  }
+
+  .chat-composer textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    max-height: 104px;
+    box-sizing: border-box;
+    font-size: 16px !important;
+    line-height: 1.45;
+    resize: none;
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+  }
+
+  .chat-conversation {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* On focus, keep the welcome content scrollable; do not hide it,
+     absolutely position the composer, or force the page to scroll. */
+  .chat-composer textarea:focus {
+    scroll-margin-block: 12px;
+    outline-offset: 2px;
+  }
+
+  .chat-home:has(.chat-composer textarea:focus) .chat-intro-shell,
+  .chat-home:has(.chat-composer textarea:focus) .chat-topline {
+    display: flex;
+  }
+
+  .chat-home:has(.chat-composer textarea:focus) .chat-composer-wrap,
+  .chat-home:has(.chat-composer textarea:focus) .intro-composer-wrap {
+    position: relative;
+    inset: auto;
+    margin: auto 0 0;
+    padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+    background: transparent;
+  }
+
+  .portfolio-shell.keyboard-open {
+    height: var(--app-viewport-height, 100dvh);
+  }
+
+  .portfolio-shell.keyboard-open .chat-home,
+  .portfolio-shell.keyboard-open .chat-home.is-empty,
+  .portfolio-shell.keyboard-open .chat-home.has-messages {
+    min-height: 0;
+    height: 100%;
+    padding-bottom: 0;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer-wrap,
+  .portfolio-shell.keyboard-open .intro-composer-wrap {
+    position: relative;
+    inset: auto;
+    margin-top: auto;
+    background: transparent;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer-wrap .composer-disclaimer,
+  .portfolio-shell.keyboard-open .intro-composer-wrap .composer-disclaimer {
+    display: none;
+  }
+
+  .portfolio-shell.keyboard-open .workspace-footer {
+    display: none;
+  }
+}
+
+/* =========================================================
+   FINAL MOBILE CHAT FOCUS — show composer immediately above
+   the native iOS keyboard, without forcing page scrolling.
+   ========================================================= */
+
+@media (min-width: 701px) {
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    width: 100%;
+    max-width: 1050px;
+    margin-inline: auto;
+  }
+
+  .chat-intro-shell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 860px;
+    min-width: 0;
+    margin-inline: auto;
+  }
+
+  .chat-welcome {
+    width: 100%;
+  }
+
+  .intro-composer-wrap,
+  .chat-composer-wrap {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .portfolio-shell {
+    height: var(--app-viewport-height, 100dvh);
+    min-height: 0;
+    max-height: none;
+    overflow: hidden;
+  }
+
+  .workspace-main {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .workspace-content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .chat-home,
+  .chat-home.is-empty,
+  .chat-home.has-messages {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  .chat-intro-shell {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chat-welcome {
+    flex: 0 0 auto;
+  }
+
+  .intro-composer-wrap,
+  .chat-composer-wrap {
+    position: relative !important;
+    inset: auto !important;
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0 0;
+    padding: 8px 0 max(6px, env(safe-area-inset-bottom));
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .chat-composer {
+    width: 100%;
+    min-width: 0;
+    min-height: 88px;
+    box-sizing: border-box;
+  }
+
+  .chat-composer textarea {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    max-height: 96px;
+    font-size: 16px !important;
+    line-height: 1.45;
+    resize: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Once iOS opens the keyboard, turn the intro into a focused
+     chat screen. Keep the composer visible; hide only the hero. */
+  .portfolio-shell.keyboard-open .chat-topline {
+    flex: 0 0 auto;
+  }
+
+  .portfolio-shell.keyboard-open .chat-intro-shell {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .portfolio-shell.keyboard-open .chat-welcome {
+    display: none !important;
+  }
+
+  .portfolio-shell.keyboard-open .intro-composer-wrap,
+  .portfolio-shell.keyboard-open .chat-composer-wrap {
+    display: block;
+    flex: 0 0 auto;
+    position: relative !important;
+    inset: auto !important;
+    margin: auto 0 0;
+    padding: 8px 0 max(6px, env(safe-area-inset-bottom));
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio-shell.keyboard-open .composer-disclaimer {
+    display: none !important;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer {
+    min-height: 82px;
+  }
+
+  .portfolio-shell.keyboard-open .chat-composer textarea {
+    max-height: 76px;
+  }
+
+  .portfolio-shell.keyboard-open .workspace-footer {
+    display: none !important;
+  }
+
+  .portfolio-shell.keyboard-open .chat-home {
+    padding-bottom: 0;
+  }
+
+  /* In an existing conversation, preserve the transcript and
+     keep the composer in normal flex flow above the keyboard. */
+  .portfolio-shell.keyboard-open .chat-conversation {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none;
+  }
 }
