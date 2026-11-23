@@ -68,5 +68,15 @@ jobs:
           docker push "$IMAGE_NAME:$GITHUB_SHA"
           docker push "$IMAGE_NAME:latest"
 
-      - name: CI completed
-        run: echo "Hari AI CI and Docker publishing completed successfully"
+      - name: Deploy to Render
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.API_RENDER_AI_PORTFOLIO }}
+          IMAGE_NAME: ghcr.io/${{ github.repository }}
+        run: |
+          curl --fail --show-error --silent --get \
+            --data-urlencode "imgURL=${IMAGE_NAME,,}:$GITHUB_SHA" \
+            "$RENDER_DEPLOY_HOOK_URL"
+
+      - name: CI/CD completed
+        run: echo "Hari AI CI/CD completed successfully"
