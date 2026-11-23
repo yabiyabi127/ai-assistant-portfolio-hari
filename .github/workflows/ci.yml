@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  packages: write
 
 jobs:
   backend-ci:
@@ -39,5 +40,33 @@ jobs:
             hari-portfolio-api:ci \
             -m unittest discover -s tests -v
 
+      - name: Login to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "$GH_TOKEN" | docker login ghcr.io \
+            -u "$GITHUB_ACTOR" \
+            --password-stdin
+
+      - name: Tag Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          IMAGE_NAME="ghcr.io/${GITHUB_REPOSITORY,,}"
+
+          docker tag hari-portfolio-api:ci \
+            "$IMAGE_NAME:$GITHUB_SHA"
+
+          docker tag hari-portfolio-api:ci \
+            "$IMAGE_NAME:latest"
+
+      - name: Push Docker image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          IMAGE_NAME="ghcr.io/${GITHUB_REPOSITORY,,}"
+
+          docker push "$IMAGE_NAME:$GITHUB_SHA"
+          docker push "$IMAGE_NAME:latest"
+
       - name: CI completed
-        run: echo "Hari AI CI completed successfully"
+        run: echo "Hari AI CI and Docker publishing completed successfully"
