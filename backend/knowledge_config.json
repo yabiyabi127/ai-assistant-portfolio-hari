@@ -98,7 +98,12 @@
         "technical skills",
         "keahlian",
         "keterampilan",
-        "tech stack"
+        "tech stack",
+        "bahasa pemrograman",
+        "programming language",
+        "programming languages",
+        "coding language",
+        "bahasa coding"
       ],
       "keywords": [
         "skill",
@@ -109,7 +114,16 @@
         "frontend",
         "backend",
         "database",
-        "framework"
+        "framework",
+        "bahasa pemrograman",
+        "programming language",
+        "programming languages",
+        "bahasa coding",
+        "coding language",
+        "javascript",
+        "typescript",
+        "python",
+        "php"
       ],
       "section": "skills"
     },
@@ -204,7 +218,6 @@
       "label": "Personal Background",
       "description": "Identitas pribadi yang dibagikan Hari, asal, domisili, umur, bahasa, hobi, dan karakter",
       "aliases": [
-        "personal",
         "about me personal",
         "identitas",
         "biodata",
@@ -238,7 +251,22 @@
         "sifat",
         "minat",
         "interest",
-        "interests"
+        "interests",
+        "personal",
+        "about me personal",
+        "identitas",
+        "biodata",
+        "asal kota",
+        "domisili",
+        "umur",
+        "usia",
+        "hobi",
+        "hobby",
+        "bahasa yang digunakan",
+        "bahasa sehari-hari",
+        "bahasa komunikasi",
+        "bahasa asing",
+        "kepribadian"
       ],
       "keywords": [
         "Hari Kurniawan",

@@ -1,5 +1,5 @@
 {
-  "sha256": "f6364804a22c57ca30aaac3eae381be635e4b71bcacd88daa395327b9ad3714b",
+  "sha256": "803af045d80aa3a97b5a8554cee66a7c7c1f7fa8d586394afd41c1f7086e59c7",
   "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
   "chunks": [
     {
@@ -663,6 +663,14 @@
       "title": "HR Interview — Preparation Guide and Question Coverage",
       "content": "i; motivasi kerja; preferensi kerja mandiri atau tim; dan pertanyaan balik untuk perusahaan. Jawaban disusun sebagai contoh berbasis fakta portfolio Hari, bukan klaim bahwa semua contoh perilaku tersebut merupakan kejadian spesifik yang telah diverifikasi. Jika detail tidak tersedia, jawab secara jujur dan minta Hari menambahkan contoh atau informasi yang benar.",
       "url": "/#about",
+      "source_type": "json",
+      "source_file": "knowledge.json"
+    },
+    {
+      "id": "programming-languages",
+      "title": "Programming Languages — Bahasa Pemrograman Hari",
+      "content": "Hari memiliki pengalaman menggunakan beberapa bahasa pemrograman. JavaScript (ES6+) dan TypeScript digunakan dalam pengembangan aplikasi frontend dan full-stack. PHP digunakan dalam pengembangan backend menggunakan Laravel dan CodeIgniter. Python digunakan dalam project independen AI Portfolio Assistant dengan backend FastAPI, integrasi LLM, RAG, embeddings, dan FAISS. Teknologi backend lainnya yang pernah digunakan meliputi .NET dan ASP.NET Core. Untuk pengembangan frontend, Hari juga menggunakan HTML5 dan CSS3.",
+      "url": "/#skills",
       "source_type": "json",
       "source_file": "knowledge.json"
     },

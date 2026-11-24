@@ -334,5 +334,12 @@
     "content": "Knowledge base ini mencakup pertanyaan HR/recruiter: perkenalan diri; pekerjaan saat ini; perjalanan karier; alasan melamar; alasan perusahaan perlu menerima kandidat; kelebihan; area pengembangan; pencapaian; tantangan; teamwork; konflik; tekanan dan deadline; kegagalan dan pembelajaran; alasan mencari peluang baru; rencana karier; ekspektasi gaji; ketersediaan bergabung; preferensi WFO/WFH/hybrid; cara mempelajari teknologi; motivasi kerja; preferensi kerja mandiri atau tim; dan pertanyaan balik untuk perusahaan. Jawaban disusun sebagai contoh berbasis fakta portfolio Hari, bukan klaim bahwa semua contoh perilaku tersebut merupakan kejadian spesifik yang telah diverifikasi. Jika detail tidak tersedia, jawab secara jujur dan minta Hari menambahkan contoh atau informasi yang benar.",
     "url": "/#about",
     "category": "hr_interview"
+  },
+  {
+    "id": "programming-languages",
+    "title": "Programming Languages — Bahasa Pemrograman Hari",
+    "content": "Hari memiliki pengalaman menggunakan beberapa bahasa pemrograman. JavaScript (ES6+) dan TypeScript digunakan dalam pengembangan aplikasi frontend dan full-stack. PHP digunakan dalam pengembangan backend menggunakan Laravel dan CodeIgniter. Python digunakan dalam project independen AI Portfolio Assistant dengan backend FastAPI, integrasi LLM, RAG, embeddings, dan FAISS. Teknologi backend lainnya yang pernah digunakan meliputi .NET dan ASP.NET Core. Untuk pengembangan frontend, Hari juga menggunakan HTML5 dan CSS3. Framework dan library yang dikuasai meliputi React.js, React Native, Next.js, Angular, Vue.js, Nuxt.js, dan Flutter.",
+    "url": "/#skills",
+    "category": "skills"
   }
 ]
